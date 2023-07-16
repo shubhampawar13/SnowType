@@ -16,7 +16,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   background: #1d2929;
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 .navbar {
   position: absolute; top: 13%;
