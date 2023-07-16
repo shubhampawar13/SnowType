@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>SnowType - Typing speed test</title>
+    <link rel="icon" href="image/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div  class="navbar" >
+
+      <div class="left">
+        <img src="/logo.png" alt="">
+      </div>
+      
+
+      
+        
+    </div>
+
+  
+
+
+    <div class="wrapper">
+      <input type="text" oninput="audio.pause();" value="" class="input-field">
+      
+      <div class="content-box">
+        <div class="typing-text">
+          <p></p>
+        </div>
+        
+        <div class="content">
+          <ul class="result-details">
+
+            <li class="time" >00:<span style="font-size: 40px;"><b>120</b></span>sec
+            </li>
+
+            <li class="mistake">
+              <p>Mistakes: </i></p>
+              <span>0</span>
+            </li>
+
+            <li class="wpm">
+              <p>wpm:</p>
+              <span>0</span>
+            </li>
+
+            <li class="cpm">
+              <p>Accuracy: <span>0</span>%</p>
+              
+            </li>
+            
+          </ul>
+          
+          <button id="tooltip"><span id="tooltiptext">restart</span> <i class="fa-sharp fa-solid fa-arrow-rotate-right " onclick="resetGame()"></i></button>
+        </div>
+
+        <div class="bottom">
+          <div class="right">
+            <span><i class="fa-solid fa-clock"></i> Time</span>
+            <div class="numbers">
+            <span class="thirty" onclick="updateMaxTime(30)">30</span>
+            <span class="sixty" onclick="updateMaxTime(60)">60</span>
+            <span class="onetwwenty" onclick="updateMaxTime(120)">120</span>
+            </div>
+          </div>
+  
+          <div class="left">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5oRLi3gJKNEizud4uwYEMR?utm_source=generator"  height="90" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // function myFunction(event){
+      //   console.log(event.target.value);
+      // }
+
+      const audio = new Audio();
+      audio.src= "./click.mp3";
+    </script>
+  
+  </body>
+</html>
